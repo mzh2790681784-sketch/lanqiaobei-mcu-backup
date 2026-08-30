@@ -1,0 +1,34 @@
+#include "system.h"
+code unsigned char Seg_Table[] = 
+{
+0xc0, //0
+0xf9, //1
+0xa4, //2
+0xb0, //3
+0x99, //4
+0x92, //5
+0x82, //6
+0xf8, //7
+0x80, //8
+0x90, //9
+0x88, //A
+0x83, //b
+0xc6, //C
+0xa1, //d
+0x86, //E
+0x8e //F
+};
+
+u8 smg[8];
+
+void smg_display()
+{
+	static u8 i;
+	drive(0,0xc0);
+	drive(smg[i],0xe0);
+	drive(0x01<<i,0xc0);
+	
+	i++;
+	if(i==8)
+		i=0;
+}

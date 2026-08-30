@@ -1,0 +1,44 @@
+# ===== 排除：获奖证书（图片）=====
+获奖证书/
+
+# ===== 排除：压缩包 =====
+*.rar
+*.zip
+*.7z
+*.tar
+*.tgz
+*.tar.gz
+*.gz
+
+# ===== 排除：Keil C51 / MDK 构建产物 =====
+*.o
+*.obj
+*.lst
+*.hex
+*.axf
+*.map
+*.crf
+*.d
+*.dep
+*.bak
+*.iex
+*.lnp
+*.plg
+*.htm
+*.sct
+*.tra
+*.regs
+Objects/
+Listings/
+output/
+Debug/
+Release/
+.dep/
+JLinkLog.txt
+
+# ===== 排除：教程类 PPT（非题目，且单文件超 GitHub 100MB 限制）=====
+*.pptx
+
+# ===== 排除：测试 hex 文件夹 =====
+【省赛真题】测试用Hex/
+【国赛】测试hex/
